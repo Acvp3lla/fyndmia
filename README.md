@@ -1,4 +1,4 @@
-# fyndmia (web/ja)
+# fyndmia (web/ja) [![Netlify Status](https://api.netlify.com/api/v1/badges/03742718-8e43-496b-923f-52e64ed8a684/deploy-status)](https://app.netlify.com/sites/fyndmia/deploys)
 
 helping you find who you need.
 
