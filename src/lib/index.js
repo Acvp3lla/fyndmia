@@ -8,9 +8,10 @@ export const Global = createGlobalStyle`
   box-sizing: border-box;
 }
   body{
-    font-family: Poppins;
+    font-family: 'Rubik', sans-serif;
     overflow: hidden;
     background-color: ${backgroundColor};
     color: ${fontColor};
+    padding: 3.5ch;
   }
 `;
