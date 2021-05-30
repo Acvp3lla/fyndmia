@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { backgroundColor, fontColor } from "../styles/colors";
 
 export const Global = createGlobalStyle`
 *{
@@ -9,6 +10,7 @@ export const Global = createGlobalStyle`
   body{
     font-family: Poppins;
     overflow: hidden;
-    
+    background-color: ${backgroundColor};
+    color: ${fontColor};
   }
 `;
