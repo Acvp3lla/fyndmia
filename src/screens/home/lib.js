@@ -10,8 +10,13 @@ export const Hero = styled.img`
 `;
 
 export const Heading = styled.h1`
-  font-size: 2.4em;
+  font-size: max(0vw, 40px);
   margin-bottom: 1ch;
+  width: 350px;
+`;
+
+export const Messaging = styled.div`
+  width: 100%;
 `;
 
 export const SubHeading = styled.p`
@@ -23,6 +28,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
