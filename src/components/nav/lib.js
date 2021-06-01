@@ -1,9 +1,12 @@
 import { Link as _Link } from "react-router-dom";
 import { fontColor } from "../../styles/colors";
 import styled from "styled-components";
+import { animated } from "react-spring";
 
-export const Container = styled.nav`
+export const Container = styled(animated.nav)`
   width: 100%;
+  position: sticky;
+  top: 0;
 `;
 
 export const Link = styled(_Link)`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { animated } from "react-spring";
 
 export const Hero = styled.img`
   width: 100%;
@@ -9,8 +10,8 @@ export const Hero = styled.img`
   object-fit: cover;
 `;
 
-export const Heading = styled.h1`
-  font-size: max(0vw, 40px);
+export const Heading = styled(animated.h1)`
+  font-size: max(0vw, 50px);
   line-height: 130%;
   margin-bottom: 1ch;
   width: 350px;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { animated } from "react-spring";
 
 export const Input = styled.input`
   padding: 12px 40px 12px 14px;
@@ -9,7 +10,7 @@ export const Input = styled.input`
   width: 100%;
 `;
 
-export const Container = styled.div`
+export const Container = styled(animated.div)`
   position: relative;
   width: 100%;
 `;

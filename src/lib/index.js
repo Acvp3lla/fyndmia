@@ -15,6 +15,7 @@ export const Global = createGlobalStyle`
     width: 100vw;
     height: 100vh;
     padding: 6ch 4ch;
+    
   }
 
   #root{
