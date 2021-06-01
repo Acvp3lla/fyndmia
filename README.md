@@ -21,3 +21,25 @@ helping you find who you need.
 - switch (react-router-dom)
 - modal (reach)
 - card
+
+
+### nav
+Single nav component that renders differently based on context it is being shown in.
+This is the most important piece of the application as much of the user's interaction takes place using this component.
+
+contexts:
+
+ - user has scrolled to a point where nav would normally not be visible
+ - user has visited home page
+ - user has searched/visited url with search query
+
+
+1. User has scrolled to a point where nav would normally not be visible
+
+Nav will move from its position to the top of the page where it remain fixed... background color will also shift to improve readibility
+
+1. User has visited home page
+Nav will be close to the center of the page
+
+1. User has searched/visited url with search query
+Nav will be at the top of the page
