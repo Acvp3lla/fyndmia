@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Input = styled.input`
-  padding: 12px 14px;
+  padding: 12px 40px 12px 14px;
   border: none;
   font-size: 16px;
   outline: none;
@@ -11,6 +11,7 @@ export const Input = styled.input`
 
 export const Container = styled.div`
   position: relative;
+  width: 100%;
 `;
 
 export const SearchButton = styled.button`

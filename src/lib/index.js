@@ -12,6 +12,12 @@ export const Global = createGlobalStyle`
     overflow: hidden;
     background-color: ${backgroundColor};
     color: ${fontColor};
-    padding: 3.5ch;
+    width: 100vw;
+    height: 100vh;
+    padding: 6ch 4ch;
+  }
+
+  #root{
+    min-height: 100%;
   }
 `;

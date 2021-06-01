@@ -16,30 +16,21 @@ export const Link = styled(_Link)`
   align-items: center;
 `;
 
-export const Search = styled.input`
-  padding: 8px 10px;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  border-radius: 5px;
-  width: 100%;
-`;
-
 export const Button = styled.button`
   border: none;
-  padding: 1.5ch 1.7ch;
+  padding: 1.2ch;
+  text-align: center;
   font-size: 0.75em;
   font-weight: bold;
   border-radius: 7px;
   background-color: #03a678;
   color: white;
   white-space: nowrap;
+  width: 12ch;
   cursor: pointer;
 `;
 
 export const Form = styled.form`
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-gap: 3ch;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
 `;

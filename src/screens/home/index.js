@@ -5,7 +5,7 @@ import { Container } from "./lib";
 function Home(props) {
   return (
     <Container>
-      <Search />
+      <Search style={{ marginBottom: "350px" }} />
     </Container>
   );
 }
