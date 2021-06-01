@@ -11,6 +11,7 @@ export const Hero = styled.img`
 
 export const Heading = styled.h1`
   font-size: max(0vw, 40px);
+  line-height: 130%;
   margin-bottom: 1ch;
   width: 350px;
 `;

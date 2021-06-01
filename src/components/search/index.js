@@ -4,7 +4,7 @@ import { Input, SearchButton, Container } from "./lib";
 function Search(props) {
   return (
     <Container {...props}>
-      <Input type="text" placeholder="Who are you searching for?" />
+      <Input type="text" placeholder="What the hell should go here" />
       <SearchButton>
         <FaSearch />
       </SearchButton>
