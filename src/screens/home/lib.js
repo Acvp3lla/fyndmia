@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Hero = styled.img`
   width: 100%;
   display: block;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const Heading = styled.h1`
@@ -21,4 +25,5 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
