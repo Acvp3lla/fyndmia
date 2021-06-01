@@ -8,7 +8,6 @@ import NotFound from "./screens/notfound";
 export default function App() {
   return (
     <Router>
-      <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/search/:query" component={Discovery} />
