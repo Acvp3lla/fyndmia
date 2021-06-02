@@ -11,14 +11,16 @@ export const Hero = styled.img`
 `;
 
 export const Heading = styled(animated.h1)`
-  font-size: max(0vw, 50px);
+  font-size: min(12vw, 50px);
   line-height: 130%;
   margin-bottom: 1ch;
-  width: 350px;
+  width: min(350px, 100%);
+  white-space: normal;
 `;
 
 export const Messaging = styled.div`
   width: 100%;
+  overflow: hidden;
 `;
 
 export const SubHeading = styled.p`

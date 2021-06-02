@@ -17,10 +17,10 @@ function Nav(props) {
     <Container style={navProps}>
       <Form onSubmit={handleSubmit}>
         <Link to="/">fyndmia</Link>
-        <div>
+        <div style={{ whiteSpace: "nowrap", justifySelf: "end" }}>
           <Modal>
             <ModalOpenButton>
-              <Button style={{ marginRight: "20px" }}>Login</Button>
+              <Button>Sign In</Button>
             </ModalOpenButton>
             <ModalContent>
               <Login />
@@ -29,7 +29,7 @@ function Nav(props) {
 
           <Modal>
             <ModalOpenButton>
-              <Button>Register</Button>
+              <Button>Sign Up</Button>
             </ModalOpenButton>
             <ModalContent></ModalContent>
           </Modal>

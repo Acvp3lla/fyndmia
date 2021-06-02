@@ -10,7 +10,7 @@ export const Container = styled(animated.nav)`
 `;
 
 export const Link = styled(_Link)`
-  font-size: 1.5rem;
+  font-size: min(5vw, 20px);
   color: ${fontColor};
   text-decoration: none;
   font-weight: bold;
@@ -21,19 +21,20 @@ export const Link = styled(_Link)`
 
 export const Button = styled.button`
   border: none;
-  padding: 1.2ch;
+  padding: 1ch;
   text-align: center;
-  font-size: 0.75em;
+  font-size: min(4vw, 12px);
   font-weight: bold;
   border-radius: 7px;
   background-color: #03a678;
   color: white;
   white-space: nowrap;
-  width: 12ch;
+  width: min(45%, 12ch);
   cursor: pointer;
+  margin-right: 20px;
 `;
 
 export const Form = styled.form`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
 `;
