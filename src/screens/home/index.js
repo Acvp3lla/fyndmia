@@ -20,10 +20,9 @@ function Home(props) {
 
   return (
     <Container>
-      {/*
       <Messaging>
-        <Heading>Let's get stuff done</Heading>
-      </Messaging>*/}
+        <Heading>In development</Heading>
+      </Messaging>
       <Search
         style={searchProps}
         onFocus={handleSearchFocus}

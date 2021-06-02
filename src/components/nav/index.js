@@ -1,6 +1,7 @@
 import { Container, Link, Button, Form } from "./lib";
 import { useSpring } from "react-spring";
 import { Modal, ModalContent, ModalOpenButton } from "../modal";
+import Login from "../login";
 
 function Nav(props) {
   const navProps = useSpring({
@@ -21,7 +22,9 @@ function Nav(props) {
             <ModalOpenButton>
               <Button style={{ marginRight: "20px" }}>Login</Button>
             </ModalOpenButton>
-            <ModalContent></ModalContent>
+            <ModalContent>
+              <Login />
+            </ModalContent>
           </Modal>
 
           <Modal>
