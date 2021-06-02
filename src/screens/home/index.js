@@ -7,8 +7,7 @@ import { useState } from "react";
 function Home(props) {
   const searchProps = useSpring({
     position: "absolute",
-    transform: props.isSearchFocused ? "translateY(-100px)" : "translateY(0px)",
-    marginBottom: "250px"
+    transform: props.isSearchFocused ? "translateY(-100px)" : "translateY(0px)"
   });
 
   function handleSearchFocus() {
@@ -20,9 +19,6 @@ function Home(props) {
 
   return (
     <Container>
-      <Messaging>
-        <Heading>In development</Heading>
-      </Messaging>
       <Search
         style={searchProps}
         onFocus={handleSearchFocus}
