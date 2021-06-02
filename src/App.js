@@ -13,7 +13,8 @@ export default function App() {
 
   const mountProps = useSpring({
     opacity: isMounted ? 1 : 0,
-    config: config.molasses
+    transform: `translateY(${isMounted ? "0px" : "-400px"})`,
+    config: config.slow
   });
 
   useLayoutEffect(() => {
