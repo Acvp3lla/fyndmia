@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { backgroundColor, fontColor } from "../styles/colors";
-import "@reach/dialog/styles.css";
 import { Dialog as ReachDialog } from "@reach/dialog";
+import "@reach/dialog/styles.css";
 
 export const Global = createGlobalStyle`
   * {
@@ -16,7 +16,7 @@ export const Global = createGlobalStyle`
     color: ${fontColor};
     width: 100vw;
     height: 100vh;
-    padding: 6ch 4ch;
+    padding: 6ch 4ch !important;
   }
 
   #root {
@@ -25,6 +25,6 @@ export const Global = createGlobalStyle`
 `;
 
 export const Dialog = styled(ReachDialog)`
-  max-width: 500px;
+  width: min(900px, 90vw);
   border-radius: 5px;
 `;

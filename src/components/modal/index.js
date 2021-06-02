@@ -1,5 +1,9 @@
 import { cloneElement, useContext, createContext, useState } from "react";
 import { Dialog } from "../../lib";
+import VisuallyHidden from "@reach/visually-hidden";
+import { IoMdClose } from "react-icons/io";
+import { CloseButton } from "./lib";
+import { useSpring } from "react-spring";
 
 const callAll = (...fns) => (...args) => fns.forEach((fn) => fn && fn(...args));
 
@@ -36,10 +40,23 @@ function ModalDismissButton({ children: child }) {
 }
 
 function ModalContent({ children, ...props }) {
+  const [isCloseHovered, setIsCloseHovered] = useState(false);
+  const closeButtonProps = useSpring({
+    background: isCloseHovered ? "black" : "transparent",
+    opacity: isCloseHovered ? 1 : 0.5
+  });
+
   return (
     <ModalContentBase>
       <ModalDismissButton>
-        <button>CLOSE</button>
+        <CloseButton
+          onMouseEnter={() => setIsCloseHovered(true)}
+          onMouseLeave={() => setIsCloseHovered(false)}
+          style={closeButtonProps}
+        >
+          <VisuallyHidden>Close</VisuallyHidden>
+          <IoMdClose fill={isCloseHovered ? "white" : "black"} />
+        </CloseButton>
       </ModalDismissButton>
       {children}
     </ModalContentBase>

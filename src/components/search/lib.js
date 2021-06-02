@@ -22,4 +22,5 @@ export const SearchButton = styled.button`
   right: 2ch;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 `;

@@ -1,5 +1,6 @@
 import { Container, Link, Button, Form } from "./lib";
 import { useSpring } from "react-spring";
+import { Modal, ModalContent, ModalOpenButton } from "../modal";
 
 function Nav(props) {
   const navProps = useSpring({
@@ -16,8 +17,19 @@ function Nav(props) {
       <Form onSubmit={handleSubmit}>
         <Link to="/">fyndmia</Link>
         <div>
-          <Button style={{ marginRight: "20px" }}>Login</Button>
-          <Button>Register</Button>
+          <Modal>
+            <ModalOpenButton>
+              <Button style={{ marginRight: "20px" }}>Login</Button>
+            </ModalOpenButton>
+            <ModalContent></ModalContent>
+          </Modal>
+
+          <Modal>
+            <ModalOpenButton>
+              <Button>Register</Button>
+            </ModalOpenButton>
+            <ModalContent></ModalContent>
+          </Modal>
         </div>
       </Form>
     </Container>
