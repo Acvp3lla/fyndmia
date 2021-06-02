@@ -4,11 +4,10 @@ import App from "./App";
 import { Global } from "./lib";
 
 const rootElement = document.getElementById("root");
-/*ReactDOM.render(
+ReactDOM.render(
   <StrictMode>
     <Global />
     <App />
   </StrictMode>,
   rootElement
 );
-*/
