@@ -26,7 +26,7 @@ export const Global = createGlobalStyle`
 `;
 
 export const Dialog = styled(ReachDialog)`
-  width: min(900px, 90vw);
+  width: min(500px);
   border-radius: 5px;
   margin: 20vh auto !important;
 `;

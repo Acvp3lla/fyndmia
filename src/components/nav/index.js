@@ -1,7 +1,8 @@
 import { Container, Link, Button, Form } from "./lib";
 import { useSpring } from "react-spring";
 import { Modal, ModalContent, ModalOpenButton } from "../modal";
-import Login from "../login";
+import Login from "../forms/login";
+import Register from "../forms/register";
 
 function Nav(props) {
   const navProps = useSpring({
@@ -31,7 +32,9 @@ function Nav(props) {
             <ModalOpenButton>
               <Button>Sign Up</Button>
             </ModalOpenButton>
-            <ModalContent></ModalContent>
+            <ModalContent>
+              <Register />
+            </ModalContent>
           </Modal>
         </div>
       </Form>
