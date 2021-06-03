@@ -32,7 +32,7 @@ function Login() {
         <input type="checkbox" id="rememberMe" />
       </div>
       <Button type="submit">
-        Sign In <Spinner />
+        Sign In <Spinner style={{ marginLeft: "20px" }} />
       </Button>
     </Form>
   );

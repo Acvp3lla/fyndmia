@@ -26,9 +26,15 @@ export const Global = createGlobalStyle`
 `;
 
 export const Dialog = styled(ReachDialog)`
-  width: min(500px);
+  max-width: 450px;
   border-radius: 5px;
-  margin: 20vh auto !important;
+  box-shadow: 3.5em;
+  margin: 20vh auto;
+  z-index: 3;
+  @media (max-width: 991px) {
+    width: 100%;
+    margin: 10vh auto;
+  }
 `;
 
 const spin = keyframes`

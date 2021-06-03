@@ -37,7 +37,7 @@ function Register() {
         />
       </FormGroup>
       <Button type="submit">
-        Sign Up <Spinner />
+        Sign Up <Spinner style={{ marginLeft: "20px" }} />
       </Button>
     </Form>
   );

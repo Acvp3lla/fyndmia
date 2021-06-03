@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 export const Form = styled.form`
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 
   > * {
-    margin-bottom: 12px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 300px;
   }
 
   button:last-child {
@@ -36,15 +41,15 @@ export const Label = styled.label``;
 
 export const Button = styled.button`
   padding: 6px 20px;
-  border: none;
+  border: 0;
   background-color: #2775ff;
   color: white;
   border-radius: 4px;
   font-size: max(1.5vh, 18px);
   cursor: pointer;
-  width: 125px;
+  line-height: 1;
   white-space: nowrap;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `;
