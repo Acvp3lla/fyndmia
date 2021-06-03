@@ -1,4 +1,4 @@
-import { Form, Input, FormGroup, Button, Label } from "./lib";
+import { Form, Input, FormGroup, Button, Label, Heading } from "./lib";
 import { Spinner } from "../../lib";
 
 function Login() {
@@ -12,7 +12,7 @@ function Login() {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <h1 style={{ textAlign: "center" }}>Sign in</h1>
+      <Heading>Sign In</Heading>
       <FormGroup>
         <Label for="email">Email</Label>
         <Input type="email" id="email" placeholder="Enter your email address" />
@@ -32,7 +32,7 @@ function Login() {
         <input type="checkbox" id="rememberMe" />
       </div>
       <Button type="submit">
-        Sign in <Spinner />
+        Sign In <Spinner />
       </Button>
     </Form>
   );

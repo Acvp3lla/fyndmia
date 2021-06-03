@@ -28,6 +28,10 @@ export const FormGroup = styled.div`
   }
 `;
 
+export const Heading = styled.h1`
+  text-align: center;
+`;
+
 export const Label = styled.label``;
 
 export const Button = styled.button`
