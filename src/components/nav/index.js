@@ -3,6 +3,7 @@ import { useSpring } from "react-spring";
 import { Modal, ModalContent, ModalOpenButton } from "../modal";
 import Login from "../forms/login";
 import Register from "../forms/register";
+import UserMenu from "../user-menu";
 
 function Nav(props) {
   const navProps = useSpring({
@@ -19,23 +20,29 @@ function Nav(props) {
       <Form onSubmit={handleSubmit}>
         <Link to="/">fyndmia</Link>
         <div style={{ whiteSpace: "nowrap", justifySelf: "end" }}>
-          <Modal>
-            <ModalOpenButton>
-              <Button>Sign In</Button>
-            </ModalOpenButton>
-            <ModalContent>
-              <Login />
-            </ModalContent>
-          </Modal>
+          {props.user ? (
+            <UserMenu />
+          ) : (
+            <>
+              <Modal>
+                <ModalOpenButton>
+                  <Button>Sign In</Button>
+                </ModalOpenButton>
+                <ModalContent>
+                  <Login />
+                </ModalContent>
+              </Modal>
 
-          <Modal>
-            <ModalOpenButton>
-              <Button>Sign Up</Button>
-            </ModalOpenButton>
-            <ModalContent>
-              <Register />
-            </ModalContent>
-          </Modal>
+              <Modal>
+                <ModalOpenButton>
+                  <Button>Sign Up</Button>
+                </ModalOpenButton>
+                <ModalContent>
+                  <Register />
+                </ModalContent>
+              </Modal>
+            </>
+          )}
         </div>
       </Form>
     </Container>

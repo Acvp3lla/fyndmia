@@ -7,6 +7,11 @@ import NotFound from "./screens/notfound";
 import { useState, useLayoutEffect } from "react";
 import { animated, useSpring, config } from "react-spring";
 
+const user = {
+  fname: "Dowen",
+  lname: "Robinson"
+};
+
 export default function App() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -23,7 +28,7 @@ export default function App() {
   return (
     <animated.div style={mountProps}>
       <Router>
-        <Nav isSearchFocused={isSearchFocused} />
+        <Nav isSearchFocused={isSearchFocused} user={user} />
         <Switch>
           <Route exact path="/">
             <Home
@@ -32,7 +37,9 @@ export default function App() {
             />
           </Route>
           <Route path="/search/:query" component={Discovery} />
-          <Route path="/u/:name" component={User} />
+          <Route path="/u/:name">
+            <User fname={user.fname} />
+          </Route>
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>

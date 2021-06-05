@@ -7,6 +7,7 @@ export const Container = styled(animated.nav)`
   width: 100%;
   position: sticky;
   top: 0;
+  z-index: 2;
 `;
 
 export const Link = styled(_Link)`
